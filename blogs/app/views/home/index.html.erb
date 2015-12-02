@@ -1,0 +1,38 @@
+<html>
+  <head>
+	  <title>alluser</title>
+	  <style>
+      table{  
+              border: 10px solid blue;         
+  	       	  height:400px;
+  	  	      width:400px;
+  	  	      margin-left: 420px
+            }
+  	           
+  	   th{
+  	       text-align: left;
+  	     }
+    </style>        
+  </head>
+  <body>
+	  <table>
+		  <caption>alluser</caption>
+		  <tr>
+		    <th>name </th>
+			  <th>address</th>
+			  <th>gender</th>
+        <th>age</th>
+		  </tr>
+		  <% @user.each do |i| %>
+        <tr>
+          <td><%= i.name %></td>
+          <td><%= i.address %></td>
+          <td><%= i.gender %></td>
+          <td><%= i.age %></td><br>
+        </tr>   
+      <% end %>  
+    </table> <br><br>  
+  </body>
+</html>    	
+
+

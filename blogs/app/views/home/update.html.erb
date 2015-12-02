@@ -1,0 +1,15 @@
+<%= form_for @user, url: {action: "update_user"}, html: {class: "user"} do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :age %>
+  <%= f.text_field :age %>
+  <%= f.label :address %>
+  <%= f.text_field :address %>
+  <%= f.label :gender %>
+  <%= f.label :male %>
+  <%= f.radio_button :gender, "male" %>
+  <%= f.label :female %>
+  <%= f.radio_button :gender, "female" %>
+  <%= f.hidden_field :id %>
+  <%= f.submit :submit %>
+<% end %>  
